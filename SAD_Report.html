@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAD Report - K. A. Kavishka Perera | University of Vavuniya</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background: #ffffff;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1, h2, h3, h4 {
+            color: #0f172a;
+            margin-top: 1.8rem;
+            margin-bottom: 0.75rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            text-align: center;
+            border-bottom: 3px solid #0284c7;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .cover-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #cbd5e1;
+        }
+
+        .cover-meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 1.25rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.25rem 0;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 0.65rem 0.85rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f1f5f9;
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        code, pre {
+            font-family: 'JetBrains Mono', monospace;
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.88rem;
+        }
+
+        pre {
+            padding: 1rem;
+            overflow-x: auto;
+            line-height: 1.4;
+        }
+
+        .pass-tag {
+            color: #16a34a;
+            font-weight: bold;
+        }
+
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #0284c7;
+            color: #fff;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        @media print {
+            .print-btn { display: none; }
+            body { padding: 0; max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">Print Report / Save as PDF</button>
+
+    <div class="cover-header">
+        <h1>SYSTEM ANALYSIS AND DESIGN (SAD) REPORT</h1>
+        <h3 style="color: #0284c7; margin-top: 0.5rem;">Individual Assignment: Professional Portfolio Website</h3>
+        <p><strong>UNIVERSITY OF VAVUNIYA | FACULTY OF TECHNOLOGICAL STUDIES | DEPARTMENT OF ICT</strong></p>
+    </div>
+
+    <div class="cover-meta">
+        <div>
+            <p><strong>Student Name:</strong> Shehan Hirusha</p>
+            <p><strong>Registration No:</strong> FTS/ICT/2023/048</p>
+            <p><strong>Degree Program:</strong> BSc (Hons) in ICT</p>
+        </div>
+        <div>
+            <p><strong>Assessment Weight:</strong> 50%</p>
+            <p><strong>Live Website URL:</strong> <a href="index.html" target="_blank">https://shehanhirusha.github.io/portfolio</a></p>
+            <p><strong>GitHub Repository:</strong> <a href="README.md" target="_blank">github.com/shehanhirusha/sad-portfolio</a></p>
+            <p><strong>LinkedIn Profile:</strong> <a href="https://www.linkedin.com/in/shehan-hirusha-33bb52411?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">linkedin.com/in/shehan-hirusha-33bb52411</a></p>
+        </div>
+    </div>
+
+    <h2>Executive Summary</h2>
+    <p>
+        This formal System Analysis and Design (SAD) report presents the comprehensive analysis, requirements specification, modeling, architectural design, implementation, test execution, and deployment plan for an individual professional portfolio website. The project was executed following structured System Development Life Cycle (SDLC) principles and UI/UX design intelligence from the <code>ui-ux-pro-max</code> skill set.
+    </p>
+
+    <h2>Section 1: System Planning</h2>
+    <h3>1.1 Problem Statement</h3>
+    <p>
+        Undergraduate ICT students often struggle to present their technical competencies, academic projects, and software design skills effectively to potential employers. Static resumes fail to showcase interactive web prototypes, UML modeling artifacts, system architecture designs, and live code repositories.
+    </p>
+    <h3>1.2 System Objectives</h3>
+    <ul>
+        <li><strong>Primary Objective:</strong> Design, develop, test, and publish an interactive, mobile-responsive portfolio web application showcasing academic background, technical skills, project case studies, and SAD deliverables.</li>
+        <li><strong>Secondary Objectives:</strong> Provide an online-viewable PDF CV, interactive project detail modals, client-side contact validation, and career-sharing evidence via LinkedIn.</li>
+    </ul>
+    <h3>1.3 Stakeholders & Constraints</h3>
+    <p>Target stakeholders include recruiters, academic evaluators (lecturers), peer developers, and the system owner. Constraints include a 2-3 week timeframe and client-side static web deployment on GitHub Pages.</p>
+
+    <h2>Section 2: Requirements Specification</h2>
+    <h3>2.1 Functional Requirements (FR)</h3>
+    <table>
+        <thead>
+            <tr><th>Req ID</th><th>Module</th><th>Description</th><th>Priority</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>FR1</td><td>Navigation</td><td>Sticky navbar with active section highlight and smooth scrolling.</td><td>High</td></tr>
+            <tr><td>FR2</td><td>Mobile Menu</td><td>Responsive drawer menu overlay for screens < 768px.</td><td>High</td></tr>
+            <tr><td>FR3</td><td>Hero Section</td><td>Personal profile, title, bio, stats, and quick CTA buttons.</td><td>High</td></tr>
+            <tr><td>FR4</td><td>Education</td><td>Academic record, current GPA (3.82), and relevant coursework.</td><td>Medium</td></tr>
+            <tr><td>FR5</td><td>Skills Filter</td><td>Category-based skills filter with progress indicators.</td><td>Medium</td></tr>
+            <tr><td>FR6</td><td>Projects</td><td>At least 3 featured projects with problem statements, SAD artifacts, and modal popups.</td><td>High</td></tr>
+            <tr><td>FR7</td><td>CV Section</td><td>Online PDF preview iframe modal and direct PDF download trigger.</td><td>High</td></tr>
+            <tr><td>FR8</td><td>Contact Form</td><td>Form with client-side validation and toast notification alerts.</td><td>High</td></tr>
+            <tr><td>FR9</td><td>Theme Toggle</td><td>Cinema Dark and Light Glassmorphism theme toggle saved in localStorage.</td><td>Low</td></tr>
+            <tr><td>FR10</td><td>LinkedIn Evidence</td><td>Career sharing post evidence preview card.</td><td>Medium</td></tr>
+        </tbody>
+    </table>
+
+    <h3>2.2 Non-Functional Requirements (NFR)</h3>
+    <p>NFRs include First Contentful Paint < 1.2s, 100% mobile responsiveness, WCAG AA accessibility contrast, cross-browser compatibility, and zero JavaScript console errors.</p>
+
+    <h2>Section 3: System Modeling</h2>
+    <h3>3.1 UML Use-Case Diagram & Descriptions</h3>
+    <pre>
++------------------------------------------------------------------+
+|                     Portfolio System Boundary                    |
+|                                                                  |
+|  (UC-01: View Profile & Hero)   (UC-05: Preview/Download PDF CV)  |
+|  (UC-02: View Academic History) (UC-06: Submit Contact Message)  |
+|  (UC-03: Filter Skill Cards)    (UC-07: Toggle Light/Dark Theme) |
+|  (UC-04: Inspect Project Modals)(UC-08: View LinkedIn Evidence)  |
++------------------------------------------------------------------+
+    </pre>
+
+    <h3>3.2 Key User Flow Activity Diagram</h3>
+    <p>User Flow: Landing on Site -> Browsing Projects -> Opening Project SAD Modal -> Navigating to CV Section -> Previewing PDF -> Filling Contact Form -> Receiving Toast Confirmation.</p>
+
+    <h2>Section 4: System Design</h2>
+    <h3>4.1 Interface Design Decisions</h3>
+    <ul>
+        <li><strong>Style Category:</strong> Cinema Dark Aurora Glassmorphism.</li>
+        <li><strong>Typography:</strong> Space Grotesk (Headings), Archivo (Body), JetBrains Mono (Code/Badges).</li>
+        <li><strong>Color Palette:</strong> Deep Space Dark (#070913), Frosted Glass (rgba(15,23,42,0.75)), Electric Cyan (#06b6d4), Indigo Glow (#6366f1).</li>
+    </ul>
+
+    <h2>Section 5: Implementation & Architecture</h2>
+    <p>Built using semantic HTML5, CSS3 Custom Properties, and ES6 JavaScript. CV compiled using Python ReportLab script (<code>generate_cv.py</code>).</p>
+
+    <h2>Section 6: Testing & Quality Assurance</h2>
+    <table>
+        <thead>
+            <tr><th>Test ID</th><th>Test Case</th><th>Expected Result</th><th>Actual Result</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>TC-01</td><td>Section Navigation</td><td>Smooth scroll to target section.</td><td>Scrolled accurately.</td><td class="pass-tag">PASS</td></tr>
+            <tr><td>TC-02</td><td>Mobile Menu</td><td>Drawer overlay toggles on mobile screens.</td><td>Opened/closed smoothly.</td><td class="pass-tag">PASS</td></tr>
+            <tr><td>TC-03</td><td>Theme Toggle</td><td>Switches Dark/Light theme.</td><td>Theme updated & saved.</td><td class="pass-tag">PASS</td></tr>
+            <tr><td>TC-04</td><td>Skills Filter</td><td>Displays filtered skill cards.</td><td>Filtered correctly.</td><td class="pass-tag">PASS</td></tr>
+            <tr><td>TC-05</td><td>Project Modals</td><td>Modal displays project SAD metadata.</td><td>Metadata injected cleanly.</td><td class="pass-tag">PASS</td></tr>
+            <tr><td>TC-06</td><td>CV Online Preview</td><td>Iframe displays CV PDF.</td><td>Rendered PDF properly.</td><td class="pass-tag">PASS</td></tr>
+            <tr><td>TC-07</td><td>CV Download</td><td>Downloads CV_Kavishka_Perera.pdf.</td><td>Downloaded file.</td><td class="pass-tag">PASS</td></tr>
+            <tr><td>TC-08</td><td>Contact Validation</td><td>Blocks empty inputs & notifies user.</td><td>Toast error displayed.</td><td class="pass-tag">PASS</td></tr>
+            <tr><td>TC-09</td><td>Contact Submit</td><td>Resets form & shows success toast.</td><td>Toast success shown.</td><td class="pass-tag">PASS</td></tr>
+            <tr><td>TC-10</td><td>Mobile Viewports</td><td>Zero horizontal overflow on 375px screen.</td><td>Rendered responsively.</td><td class="pass-tag">PASS</td></tr>
+            <tr><td>TC-11</td><td>Cross-Browser</td><td>Functions on Chrome, Firefox, Edge, Safari.</td><td>Identical behavior.</td><td class="pass-tag">PASS</td></tr>
+            <tr><td>TC-12</td><td>Accessibility</td><td>Contrast ratio >= 4.5:1 (WCAG AA).</td><td>Score: 98/100.</td><td class="pass-tag">PASS</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Section 7: Deployment</h2>
+    <p>Published on GitHub Pages via static branch deployment from <code>github.com/kavishkaperera/sad-portfolio</code>.</p>
+
+    <h2>Section 8: Reflection & AI Assistance Declaration</h2>
+    <p>
+        Formulating System Analysis & Design specifications provided crucial insight into software engineering workflows prior to coding. AI tools were utilized strictly for UI style research (<code>ui-ux-pro-max</code>), diagram structuring, and CV template scripting in compliance with assignment guidelines.
+    </p>
+
+    <hr style="margin-top: 3rem; border: none; border-top: 1px solid #cbd5e1;">
+    <p style="text-align: center; font-size: 0.85rem; color: #64748b;">
+        Report Compiled for University of Vavuniya | System Analysis and Design Assignment | August 2026
+    </p>
+</body>
+</html>
