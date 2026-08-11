@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SAD Professional Portfolio Website
 
 ![Portfolio Banner](assets/agriconnect_preview.png)
@@ -114,3 +115,7 @@ Faculty of Technological Studies | University of Vavuniya, Sri Lanka
 - **Email:** kavishka.perera@vau.ac.lk  
 - **LinkedIn:** [linkedin.com/in/kavishkaperera](https://linkedin.com/in/kavishkaperera)  
 - **GitHub:** [github.com/kavishkaperera](https://github.com/kavishkaperera)  
+=======
+# shehanhirusha.github.io
+ My personal portfolio website - showcase of my projects and skills
+>>>>>>> 4473762fd631cf79e2211386b2f23a228f55692a
