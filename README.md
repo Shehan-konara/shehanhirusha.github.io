@@ -1,121 +1,226 @@
-<<<<<<< HEAD
-# SAD Professional Portfolio Website
+# Shehan Hirusha | Android Application Developer Portfolio
 
-![Portfolio Banner](assets/agriconnect_preview.png)
+## 📱 About This Portfolio
 
-> **University of Vavuniya | Faculty of Technological Studies | Department of ICT**  
-> **Course:** System Analysis and Design (SAD) — Individual Assignment (Weight: 50%)  
-> **Student Name:** Shehan Hirusha  
-> **Registration No:** FTS/ICT/2023/048  
-> **Live Web App:** [https://shehanhirusha.github.io/portfolio](https://shehanhirusha.github.io/portfolio)  
-> **GitHub Repository:** [https://github.com/shehanhirusha/sad-portfolio](https://github.com/shehanhirusha/sad-portfolio)  
-> **LinkedIn Profile:** [linkedin.com/in/shehan-hirusha-33bb52411](https://www.linkedin.com/in/shehan-hirusha-33bb52411?utm_source=share_via&utm_content=profile&utm_medium=member_android)  
+This is a professional portfolio website showcasing **Shehan Hirusha**, an Android Application Developer and ICT Undergraduate at the University of Vavuniya, Sri Lanka. The portfolio highlights skills, projects, education, and professional experience in mobile app development.
 
----
+## 🎯 Purpose
 
-## 🌟 Overview
+- Demonstrate Android development expertise (Flutter, Kotlin, Java)
+- Showcase academic achievements (GPA: 3.82/4.00)
+- Display featured mobile applications with GitHub repositories
+- Provide downloadable CV and contact information
+- Meet academic portfolio requirements (SAD module)
 
-This repository contains the complete source code, design assets, PDF curriculum vitae generator, and System Analysis & Design (SAD) report for a modern, mobile-responsive professional portfolio web application. 
+## 🛠️ Technologies Used
 
-The portfolio was engineered to demonstrate core System Development Life Cycle (SDLC) competencies, UML modeling, functional/non-functional requirements specifications, and frontend design excellence guided by the **`ui-ux-pro-max`** design intelligence framework.
+### Frontend
+- **HTML5** - Semantic markup structure
+- **CSS3** - Custom properties, flexbox, grid, animations
+- **Vanilla JavaScript** - Interactivity, modals, theme toggling, form validation
 
----
+### Design System
+- **Custom Design Tokens** - CSS variables for theming
+- **Glass Morphism** - Modern UI aesthetic
+- **Responsive Design** - Mobile-first approach
+- **Dark/Light Mode** - Theme toggle functionality
 
-## 🚀 Key Features
+### Icons & Assets
+- **FontAwesome 6.4.0** - Icon library
+- **Custom Images** - Profile photo, project previews
 
-1. **Aurora Dark Glassmorphism Design System**: High-aesthetic visual design with deep radial aurora gradients, glass backdrop filters (`blur(16px)`), micro-animations, and dynamic theme switching (Cinema Dark / Light Glassmorphism).
-2. **Typography Hierarchy**: Pairings selected via UI/UX Pro Max skill: *Space Grotesk* for geometric headings, *Archivo* for body text, and *JetBrains Mono* for technical badges.
-3. **8 Mandatory SAD Portfolio Sections**:
-   - **Home**: Hero banner, introduction, stats, avatar, and quick action CTAs.
-   - **About Me**: Professional profile, interests, and career objectives.
-   - **Education**: Degree details, cumulative GPA (3.82/4.00), and academic highlights.
-   - **Skills**: Filterable competencies (Frontend, SAD & Modeling, Tools, Soft Skills) with animated progress bars.
-   - **Projects**: 3 featured case studies (AgriConnect, VavuCampus, Medity) with problem statements, SAD deliverables, tech stack tags, and interactive detail modals.
-   - **Experience & Leadership**: Departmental roles, hackathon achievements, peer mentoring, and LinkedIn career sharing evidence.
-   - **CV Section**: Embedded online PDF CV viewer modal + direct download trigger.
-   - **Contact & Links**: Form with client-side validation, direct email/location details, and toast notifications.
-4. **Standalone Professional CV PDF**: Programmatically generated 2-page PDF document (`CV_Kavishka_Perera.pdf`) built using Python ReportLab.
-5. **Comprehensive SAD Documentation**: Complete 8-stage SAD report formatted in Markdown (`SAD_Report.md`) and printable HTML (`SAD_Report.html`).
+### External Integrations
+- **LinkedIn** - Professional profile link
+- **GitHub** - Repository links for projects
+- **Firebase** - Featured in project stack
 
----
-
-## 🛠️ Technology Stack
-
-| Layer | Technologies Used |
-| :--- | :--- |
-| **Core Web Technologies** | HTML5, CSS3 (Vanilla Custom Properties & Grid/Flexbox), ES6+ JavaScript |
-| **Design Framework** | UI/UX Pro Max Skill (Aurora Dark Glassmorphism, Space Grotesk, Archivo, JetBrains Mono) |
-| **PDF Generation** | Python 3, ReportLab Library (`generate_cv.py`) |
-| **Icons & Media** | FontAwesome 6.4, Custom SVG Canvas Assets |
-| **Version Control & Hosting** | Git, GitHub, GitHub Pages |
-
----
-
-## 📁 Repository Structure
+## 📂 Project Structure
 
 ```
-.
+portfolio/
+├── index.html              # Main HTML file
+├── styles.css              # Complete stylesheet
+├── script.js               # JavaScript functionality
+├── CV_Shehan_Hirusha.pdf   # Downloadable CV
 ├── assets/
-│   ├── agriconnect_preview.png   # AgriConnect case study UI mockup
-│   ├── linkedin_evidence.png     # LinkedIn career post screenshot evidence
-│   ├── medity_preview.png        # Medity Tele-Health UI mockup
-│   ├── profile_avatar.png        # Professional developer avatar
-│   └── vavucampus_preview.png    # VavuCampus portal UI mockup
-├── CV_Kavishka_Perera.pdf        # Primary CV PDF document
-├── CV.pdf                        # Alternate CV PDF download link
-├── generate_cv.py                # Python script to build CV PDF
-├── index.html                    # Main semantic HTML5 webpage
-├── README.md                     # GitHub repository documentation
-├── SAD Portfolio Assignment.pdf   # Assignment specification guidelines
-├── SAD_Report.html               # Printable HTML SAD Report for PDF export
-├── SAD_Report.md                 # Complete 8-section SAD Report in Markdown
-├── script.js                     # Interactive JS logic & toast system
-└── styles.css                    # Aurora Glassmorphism CSS design system
+│   ├── myphoto-clean.png   # Profile photo
+│   ├── agriconnect_preview.png
+│   ├── vavucampus_preview.png
+│   ├── medity_preview.png
+│   └── linkedin_evidence.png
+└── README.md               # This file
 ```
 
----
+## ✨ Features
 
-## 💻 Local Setup & Execution
+### 1. Navigation
+- Sticky navbar with smooth scrolling
+- Mobile-responsive hamburger menu
+- Active section highlighting
 
-### 1. View Portfolio Web App Locally
-No build tools or node servers are strictly required. Simply open `index.html` in any web browser:
-- Double-click `index.html` OR
-- Run a local HTTP server:
-  ```bash
-  python -m http.server 8000
-  ```
-  Then open `http://localhost:8000` in your browser.
+### 2. Theme Toggle
+- Switch between light and dark modes
+- Persists user preference
 
-### 2. Re-generate CV PDF
-If you modify `generate_cv.py`, run:
+### 3. Skills Section
+- Interactive category filtering
+- Visual progress bars
+- Categorized by: Mobile, Backend, Tools, Soft Skills
+
+### 4. Projects Showcase
+- Three featured Android applications
+- GitHub repository links
+- Modal popups with project details
+- Technology tags (Flutter, Kotlin, Java, etc.)
+
+### 5. CV Integration
+- In-browser PDF preview
+- One-click PDF download
+- Modal viewer for easy access
+
+### 6. Contact Form
+- Client-side validation
+- Responsive layout
+- Toast notifications for feedback
+
+### 7. LinkedIn Evidence
+- Embedded screenshot of LinkedIn post
+- Direct link to professional profile
+- Demonstrates career promotion (Assignment Requirement #6)
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Any modern web browser (Chrome, Firefox, Safari, Edge)
+- Git (for cloning)
+- Code editor (VS Code recommended)
+
+### Installation
+
+1. **Clone the repository**
 ```bash
-python generate_cv.py
+git clone https://github.com/shehanhirusha/portfolio.git
 ```
-This will compile an updated `CV_Kavishka_Perera.pdf`.
+
+2. **Navigate to project directory**
+```bash
+cd portfolio
+```
+
+3. **Open in browser**
+```bash
+# Using VS Code Live Server
+Right-click index.html → Open with Live Server
+
+# Or open directly
+open index.html  # macOS
+start index.html # Windows
+```
+
+4. **View locally**
+   - The portfolio will be available at `http://localhost:5500` (with Live Server)
+
+## 📊 Section Overview
+
+| Section | Content | Key Highlights |
+|---------|---------|----------------|
+| **Home** | Hero section with stats | GPA 3.82, 5+ apps built |
+| **About** | Professional profile & objectives | Career goals, skill focus |
+| **Education** | Academic timeline | Dean's List, coursework |
+| **Skills** | Technical competencies | 8 skills with progress bars |
+| **Projects** | Featured Android apps | 3 projects with GitHub links |
+| **Experience** | Leadership & activities | Hackathon finalist, Open Source |
+| **CV** | Resume download & preview | PDF viewer modal |
+| **Contact** | Professional links & form | LinkedIn, GitHub, email |
+
+## 🎨 Color System
+
+```css
+--bg-primary: #f0f4f8    (Light background)
+--bg-secondary: #ffffff   (Card background)
+--text-primary: #0b1a2e   (Primary text)
+--accent-primary: #6c63ff (Primary accent)
+--accent-secondary: #ff6b6b (Secondary accent)
+```
+
+## 🔧 JavaScript Features
+
+1. **Theme Toggle** - Light/Dark mode switching
+2. **Mobile Menu** - Hamburger navigation for mobile
+3. **Skill Filtering** - Category-based filtering
+4. **Project Modals** - Detailed project views
+5. **CV Modal** - PDF preview in browser
+6. **Form Validation** - Contact form with validation
+7. **Toast Notifications** - User feedback messages
+8. **Smooth Scrolling** - Navigation with offset
+
+## 📱 Responsive Breakpoints
+
+| Breakpoint | Target Devices |
+|------------|----------------|
+| 768px | Tablets |
+| 480px | Mobile phones |
+| 1200px | Desktop screens |
+
+## 🔗 External Links
+
+- **LinkedIn**: [Shehan Hirusha](https://www.linkedin.com/in/shehan-hirusha-33bb52411)
+- **GitHub**: [@shehanhirusha](https://github.com/shehanhirusha)
+- **Email**: shehan.hirusha@vau.ac.lk
+
+## 📝 Academic Context
+
+This portfolio was created as part of the **Software Application Development (SAD)** module, 2nd Year, 2nd Semester, at the **University of Vavuniya**, Faculty of Technological Studies.
+
+### Assignment Requirements Met:
+- ✅ Professional web presence
+- ✅ Career promotion (LinkedIn integration)
+- ✅ CV downloadable and viewable
+- ✅ Project showcase with GitHub integration
+- ✅ Contact form for professional inquiries
+
+## 🧪 Testing
+
+### Browser Compatibility
+- ✅ Chrome (latest)
+- ✅ Firefox (latest)
+- ✅ Safari (latest)
+- ✅ Edge (latest)
+
+### Features Tested
+- Theme toggle persistence
+- Mobile menu responsiveness
+- Form validation
+- Modal popups
+- PDF rendering
+- Link navigation
+
+## 💡 Future Enhancements
+
+- [ ] Add blog section for technical articles
+- [ ] Integrate Firebase for form submissions
+- [ ] Add more project details and screenshots
+- [ ] Implement analytics tracking
+- [ ] Add animation library (AOS or GSAP)
+- [ ] Multilingual support (English/Sinhala/Tamil)
+
+## 🤝 Contributing
+
+This is a personal portfolio project, but suggestions are welcome:
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
+
+## 📄 License
+
+© 2026 Shehan Hirusha. All rights reserved.
+
+## 📧 Contact
+
+For any inquiries regarding this portfolio:
+- **Email**: shehan.hirusha@vau.ac.lk
+- **LinkedIn**: [Shehan Hirusha](https://www.linkedin.com/in/shehan-hirusha-33bb52411)
 
 ---
 
-## 📋 Deliverables Mapping (Assignment Requirements)
-
-| Requirement | Deliverable File / Location | Status |
-| :--- | :--- | :--- |
-| **1. Public Portfolio Web App** | `index.html`, `styles.css`, `script.js` | ✅ Completed |
-| **2. GitHub Repository & README** | `README.md` & GitHub repo | ✅ Completed |
-| **3. Concise SAD Report (5–8 pages)** | `SAD_Report.md` & `SAD_Report.html` | ✅ Completed |
-| **4. Updated CV PDF** | `CV_Kavishka_Perera.pdf` & online modal | ✅ Completed |
-| **5. Career-Sharing Evidence** | `assets/linkedin_evidence.png` & section | ✅ Completed |
-
----
-
-## 👤 Author Information
-
-**K. A. Kavishka Perera**  
-Undergraduate ICT Student | Software Developer & System Analyst  
-Faculty of Technological Studies | University of Vavuniya, Sri Lanka  
-- **Email:** kavishka.perera@vau.ac.lk  
-- **LinkedIn:** [linkedin.com/in/kavishkaperera](https://linkedin.com/in/kavishkaperera)  
-- **GitHub:** [github.com/kavishkaperera](https://github.com/kavishkaperera)  
-=======
-# shehanhirusha.github.io
- My personal portfolio website - showcase of my projects and skills
->>>>>>> 4473762fd631cf79e2211386b2f23a228f55692a
+*Built with ❤️ using HTML5, CSS3, and Vanilla JavaScript*
